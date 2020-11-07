@@ -5,15 +5,38 @@
 body{
     background-color:  hsl(0, 0%, 98%);
     background-image: url("./assets/images/bg-tablet-pattern.svg");
-    background-position: right; 
     background-repeat: no-repeat;
+    background-position-y: -13rem;
+    background-position-x: 52rem;
+}
+.button{
+    background-color:hsl(12, 88%, 59%);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.button:hover{
+    background-color: hsl(12, 100%, 76%);;
+}
+p{
+    color:   hsl(227, 12%, 61%);
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    line-height: 1.5;
 }
 header{
     padding: 3rem;
 }
 .top__bar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+.logo{
+    display: flex;
 }
 ul{
     display: flex;
@@ -26,7 +49,69 @@ ul li:hover{
     color:  hsl(227, 12%, 61%);
     cursor: pointer;
 }
-.top__bar a{
-    text-decoration: none;
-    color: black;
+.header__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5rem;
+}
+.header__section .left__side{
+    padding-left: 5rem;
+}
+.header__section .left__side .title{
+    font-size: 60px;
+    color:  hsl(228, 39%, 23%);
+    padding-top: 1.5rem;
+}
+.header__section .left__side .inner__text{
+    margin-bottom: 1rem;
+}
+.second__section{
+    background-image: url("./assets/images/bg-tablet-pattern.svg");
+    background-position-x: -30rem;
+    background-position-y: 30rem;
+    background-repeat: no-repeat;
+}
+.about{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.about .left__side .title{
+    font-size: 40px;
+    color:  hsl(228, 39%, 23%);
+}
+.about .left__side .inner__text{
+    margin-bottom: 1rem;
+}
+.about .right__side .track .title{
+  display: flex;
+  align-items: center;
+}
+.about .right__side .track h2{
+    padding-left: 2rem;
+}
+.about .right__side .track .inner__text{
+    padding-left: 7rem;
+}
+
+.testimonials .title{
+    font-size: 40px;
+    color:  hsl(228, 39%, 23%);
+    text-align: center;
+}
+.testimonials .inner{
+    display: flex;
+    text-align: center;
+    margin-top: 7rem;
+}
+.testimonials .inner .image{
+    text-align: center;
+}
+.testimonials .inner img{
+    height: 4rem;
+}
+.testimonials .inner .name{
+    font-size: 20px;
+    color:  hsl(228, 39%, 23%);
 }
